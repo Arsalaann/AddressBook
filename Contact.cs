@@ -1,6 +1,6 @@
 namespace AddressBook{
     public class Contact{
-        string firstName,lastName,address,city,state,zipCode,phoneNumber,email;
+        public string firstName,lastName,address,city,state,zipCode,phoneNumber,email;
         public Contact(){
             firstName="";lastName="";address="";city="";state="";zipCode="";phoneNumber="";email="";
         }
