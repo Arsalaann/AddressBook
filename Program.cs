@@ -15,6 +15,9 @@
             }
             return ind;
         }
+        static public void DeleteContact(int ind){
+            AllContacts = AllContacts.Where(val => val != ind).ToArray();
+        }
     }
     
     public class AddressBookMain{
@@ -35,6 +38,11 @@
             dummy.lastName=Console.ReadLine();
             dummy.email=Console.ReadLine();
             Book.AllContacts[ind]=dummy;
+
+            Console.WriteLine("Enter name to delete");
+            Name=Console.ReadLine();
+            ind=Book.GetIndex(Name);
+            Book.DeleteContacts(ind);
         }
     }
 }
