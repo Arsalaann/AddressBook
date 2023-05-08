@@ -1,25 +1,21 @@
 ﻿namespace AddressBook{
-    public class Contact{
-        string firstName,lastName,address,city,state,zipCode,phoneNumber,email;
-        public Contact(){
-            firstName="";lastName="";address="";city="";state="";zipCode="";phoneNumber="";email="";
-        }
-        public void CreateContact(string a,string b,string c,string d,string e,string f,string g,string h){
-            firstName=a;
-            lastName=b;
-            address=c;
-            city=d;
-            state=e;
-            zipCode=f;
-            phoneNumber=g;
-            email=h;
+    static public class Book{
+        static Contact [] AllContacts;
+        static int i=0;
+        static public void AddContact(Contact contact){
+            AllContacts[i]=contact;
+            i++;
         }
     }
+    
     public class AddressBookMain{
         public static void Main(string [] args){
             Console.WriteLine("Welcome to Address Book Program");
             Contact Contact1=new Contact();
-            Contact1.CreateContact("Arsalan","Khan","abc","bcd","cde","3422342","91283928","abcd@gmail.com");
+            string [] info=new string[8];
+            for(int i=0;i<8;i++)
+                info[i]=Console.ReadLine();
+            Contact1.CreateContact(info[0],info[1],info[2],info[3],info[4],info[5],info[6],info[7]);
         }
     }
 }
