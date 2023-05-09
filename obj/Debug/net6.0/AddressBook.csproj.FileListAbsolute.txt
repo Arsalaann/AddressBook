@@ -1,0 +1,15 @@
+/home/luser/pgming/AddressBook/bin/Debug/net6.0/AddressBook
+/home/luser/pgming/AddressBook/bin/Debug/net6.0/AddressBook.deps.json
+/home/luser/pgming/AddressBook/bin/Debug/net6.0/AddressBook.runtimeconfig.json
+/home/luser/pgming/AddressBook/bin/Debug/net6.0/AddressBook.dll
+/home/luser/pgming/AddressBook/bin/Debug/net6.0/ref/AddressBook.dll
+/home/luser/pgming/AddressBook/bin/Debug/net6.0/AddressBook.pdb
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.csproj.AssemblyReference.cache
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.GeneratedMSBuildEditorConfig.editorconfig
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.AssemblyInfoInputs.cache
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.AssemblyInfo.cs
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.csproj.CoreCompileInputs.cache
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.dll
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/ref/AddressBook.dll
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.pdb
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.genruntimeconfig.cache
