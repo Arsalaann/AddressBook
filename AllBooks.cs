@@ -12,13 +12,17 @@ namespace AddressBook{
             return dummyBook;
         }
 
-        public static void SearchByCityOrState(string name,string CityOrState){
+        public static int SearchByCityOrState(string name,string CityOrState){
+            int cnt=0;
             foreach(var addressBooks in AllAddressBooks){
                 foreach(var contact in addressBooks.Value.myContacts){
-                    if(contact.city == CityOrState || contact.state == CityOrState && contact.firstName==name)
+                    if(contact.city == CityOrState || contact.state == CityOrState && contact.firstName==name){
                         contact.DisplayContact(); 
+                        cnt++;
+                    }
                 }
             }
+            return cnt;
         }
     }
 }
