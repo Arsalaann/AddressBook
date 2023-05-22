@@ -51,6 +51,8 @@ namespace AddressBook{
                 Book.SavedContacts();
             }
 
+            Book.CheckRepeatation();
+
             AllBooks.AllBooksDisplay();
 
         }

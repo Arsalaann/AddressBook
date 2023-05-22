@@ -1,3 +1,4 @@
+using System.Collections;
 namespace AddressBook{
    public class NewAddressBook{
         public List <Contact> myContacts=new List<Contact>();
@@ -35,6 +36,16 @@ namespace AddressBook{
             foreach(Contact contact in myContacts)
                 Console.WriteLine((++num)+") FirstName: "+contact.firstName);
             Console.WriteLine("\n**********************************************\n");
+        }
+
+        public void CheckRepeatation(){
+            HashSet<string> set = new HashSet<string>();
+            foreach(var contact in this.myContacts)
+                set.Add(contact.firstName);
+            if(set.Count==this.myContacts.Count)
+                Console.WriteLine("All are unique");
+            else
+                Console.WriteLine("Repeatation occurs");
         }
     }
 }
