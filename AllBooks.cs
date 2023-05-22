@@ -11,5 +11,14 @@ namespace AddressBook{
             AllAddressBooks.Add(name,dummyBook);
             return dummyBook;
         }
+
+        public static void SearchByCityOrState(string name,string CityOrState){
+            foreach(var addressBooks in AllAddressBooks){
+                foreach(var contact in addressBooks.Value.myContacts){
+                    if(contact.city == CityOrState || contact.state == CityOrState && contact.firstName==name)
+                        contact.DisplayContact(); 
+                }
+            }
+        }
     }
 }

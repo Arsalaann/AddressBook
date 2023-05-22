@@ -51,7 +51,11 @@ namespace AddressBook{
                 Book.SavedContacts();
             }
 
+            //Check for repatation in an address book
             Book.CheckRepeatation();
+
+            //Search by name inside a city or state
+            AllBooks.SearchByCityOrState("ashwin","Bhopal");
 
             AllBooks.AllBooksDisplay();
 

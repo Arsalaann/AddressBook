@@ -14,5 +14,9 @@ namespace AddressBook{
             phoneNumber=g;
             email=h;
         }
+
+        public void DisplayContact(){
+            Console.WriteLine("\nFirsname: "+this.firstName+"\nLastName: "+this.lastName+"\nCity: "+this.city+"\nState: "+this.state);
+        }
     }
 }
