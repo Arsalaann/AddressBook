@@ -10,16 +10,26 @@ namespace AddressBook{
             NewAddressBook Book=AllBooks.AddBook("Book1");
 
             //Add contacts to address book
-            Console.Write("Enter number of contacts you wanna enter: ");
-            Contact dummyContact = new Contact();
-            int totalContacts=Convert.ToInt32(Console.ReadLine());
-            while(totalContacts-->0){
-                dummyContact=Book.AddContact();
-                Book.myContacts.Add(dummyContact);
-                Console.WriteLine("Contact created and saved Successfully\n");
-            }
+            // Console.Write("Enter number of contacts you wanna enter: ");
+            // Contact dummyContact = new Contact();
+            // int totalContacts=Convert.ToInt32(Console.ReadLine());
+            // while(totalContacts-->0){
+            //     dummyContact=Book.AddContact();
+            //     Book.myContacts.Add(dummyContact);
+            //     Console.WriteLine("Contact created and saved Successfully\n");
+            // }
+            Book.myContacts.Add(new Contact("Madarsh","Sharma","begumganj","beuwemganj","mp","324324","ww@gm.com","9894233434"));
+            Book.myContacts.Add(new Contact("Ayrsh","Shama","beganj","beumganj","tremp","324324","ww@gm.com","9894233434"));
+            Book.myContacts.Add(new Contact("resdarsh","aharma","ebegumganj","berfumganj","mp","324324","ww@gm.com","9894233434"));
+            Book.myContacts.Add(new Contact("Adarsh","Suurma","obegumganj","beumgeranj","mp","324324","ww@gm.com","9894233434"));
             
-            Book.SavedContacts();
+            //Book.SavedContacts();
+
+            UsingFiles.UsingTextFile(Book);
+            string read=File.ReadAllText("./DemoTextFile.txt");
+            Console.WriteLine(read);
+
+
 
             //Edit contact
             // Console.Write("Wanna edit[y/n]?: ");
@@ -61,8 +71,8 @@ namespace AddressBook{
             //Console.WriteLine(AllBooks.SearchByCityOrState("ashwin","Bhopal"));
 
             //Book.SortContactsByName();
-            Book.SortByCityStateOrZip();
-            Book.SavedContacts();
+            // Book.SortByCityStateOrZip();
+            // Book.SavedContacts();
             //AllBooks.AllBooksDisplay();
 
         }
