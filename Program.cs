@@ -60,7 +60,8 @@ namespace AddressBook{
             //Count 
             //Console.WriteLine(AllBooks.SearchByCityOrState("ashwin","Bhopal"));
 
-            Book.SortContactsByName();
+            //Book.SortContactsByName();
+            Book.SortByCityStateOrZip();
             Book.SavedContacts();
             //AllBooks.AllBooksDisplay();
 
