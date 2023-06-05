@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+X6cfAOXiKn1daaAlIs+bKvsfvV0a90t5O1sp0S5kNfPhYLC6rmBRlrpae7cu9dH2stgX8WYGItbHDGRArPWKQ==",
+  "dgSpecHash": "ZAztwVnH4N9tll/d9c5k4i1jGLFzf9HTyqgx8C7vHEECobhrFyiajSl/d7gj/bGjhDxcGT33jeqmQ096L+v5Rg==",
   "success": true,
   "projectFilePath": "/home/luser/pgming/AddressBook/AddressBook.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/luser/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

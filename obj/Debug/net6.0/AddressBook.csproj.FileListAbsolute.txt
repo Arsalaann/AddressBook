@@ -13,3 +13,5 @@
 /home/luser/pgming/AddressBook/obj/Debug/net6.0/ref/AddressBook.dll
 /home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.pdb
 /home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.genruntimeconfig.cache
+/home/luser/pgming/AddressBook/bin/Debug/net6.0/CsvHelper.dll
+/home/luser/pgming/AddressBook/obj/Debug/net6.0/AddressBook.csproj.CopyComplete

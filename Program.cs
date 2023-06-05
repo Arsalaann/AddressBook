@@ -25,9 +25,13 @@ namespace AddressBook{
             
             //Book.SavedContacts();
 
-            UsingFiles.UsingTextFile(Book);
-            string read=File.ReadAllText("./DemoTextFile.txt");
-            Console.WriteLine(read);
+            //UsingFiles.UsingTextFile(Book);
+            //string read=File.ReadAllText("./DemoTextFile.txt");
+            //Console.WriteLine(read);
+
+            UsingFiles.UsingCSVFile(Book);
+            
+            
 
 
 

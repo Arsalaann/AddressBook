@@ -1,3 +1,5 @@
+using System.Globalization;
+using CsvHelper;
 namespace AddressBook
 {
     public class UsingFiles
@@ -12,6 +14,25 @@ namespace AddressBook
                 }
             }
         } 
+        public static void UsingCSVFile(NewAddressBook Book)
+        {
+            using(var writer=new StreamWriter("./DemoCSVFile.csv"))
+            using(var csv = new CsvWriter(writer,CultureInfo.InvariantCulture))
+            {
+                csv.WriteRecords(Book.myContacts);
+            }
+
+        }
+        public static void ReadFromCSVFile(NewAddressBook Book)
+        {
+            using(var reader=new StreamReader("./DemoCSVFile.csv"))
+            using(var csv = new CsvReader(reader,CultureInfo.InvariantCulture))
+            {
+                var contact=csv.GetRecords<Contact>();
+                Console.WriteLine(contact.ToString());
+            }
+            
+        }
             
     }
 }
