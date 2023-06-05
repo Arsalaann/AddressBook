@@ -47,5 +47,13 @@ namespace AddressBook{
             else
                 Console.WriteLine("Repeatation occurs");
         }
+
+        public void SortContactsByName(){
+            this.myContacts.Sort((x,y) => x.firstName.CompareTo(y.firstName));
+        } 
+
+        public void SortByCityStateOrZip(){
+            this.myContacts.Sort((x,y) => x.city.CompareTo(y.city));
+        }
     }
 }
